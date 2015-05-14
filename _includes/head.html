@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
 
 	<script type="text/javascript">
-		var disqus_enabled = true;
+		var disqus_enabled = {% if site.disqus_enabled %}true{% else %}false{% endif %};
 	    var disqus_shortname = '{{ site.disqus_shortname }}';
 	</script>
 
