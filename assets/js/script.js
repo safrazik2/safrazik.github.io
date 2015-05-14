@@ -53,8 +53,7 @@ var resetCount = function() {
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }
 
-
-window.onscroll = function(e) {
+var loadComments = function(){
 	if(!disqus_enabled){
 		return;
 	}
@@ -68,6 +67,11 @@ window.onscroll = function(e) {
 		disqusThread.innerHTML = '';
 		resetDisqus();
 	}
+}
+
+
+window.onscroll = function(e) {
+	loadComments();
 };
 
 
@@ -79,6 +83,7 @@ document.addEventListener('page:fetch',   function() {
 document.addEventListener('page:change',  function() {
 	resetCount();
 	loadDisqusEmbedScript();
+	loadComments(); // if the post doesn't have any scroll, comments should be loaded
 	NProgress.done();
 });
 document.addEventListener('page:restore', function() {
