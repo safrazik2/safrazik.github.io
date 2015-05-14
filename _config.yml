@@ -1,0 +1,12 @@
+# Site settings
+title: safrazik
+tagline: ""
+description: ""
+baseurl: ""
+url: "http://safrazik.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+    sass_dir: _scss

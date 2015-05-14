@@ -1,0 +1,23 @@
+.main-header {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	// border-bottom: 1px solid red;
+	margin-bottom: 1rem;
+
+	.tagline {
+		color: #AAA;
+		font-style: italic;
+		// font-size: 0.75rem;
+	}
+}
+
+.main-content {
+	// max-width: 38rem;
+	// margin-left:  auto;
+	// margin-right: auto;
+}
+
+/* hide the nprogress spinner (in case the javascript setting doesn't work) */
+#nprogress .spinner {
+	display: none !important;
+}

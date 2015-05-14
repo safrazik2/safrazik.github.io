@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+<header class="main-header">
+	<div class="container">
+    <a class="brand-link" href="{{ site.baseurl }}/">
+      {% include brand.html %}
+    </a>
+    <small class="tagline">{{ site.tagline }}</small>
+    <!-- <span class="tagline">{{ site.tagline }}</span> -->
+</div>
+</header>
+
+<div class="main-content">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+
+<script src='{{ "/assets/js/nprogress.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/assets/js/turbolinks.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/assets/js/script.js" | prepend: site.baseurl }}'></script>
+
+</body>
+</html>

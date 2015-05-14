@@ -1,0 +1,51 @@
+$brand-size: 20px;
+
+.brand-link {
+	text-decoration: none !important;
+	& + .tagline {
+		font-size: $brand-size/2 + 5;
+	}
+}
+
+.safrazik {
+	font-size: 2rem;
+	font-size: 1.5rem;
+	font-size: 1rem;
+	font-size: $brand-size;
+	color: #AAA;
+	color: #000;
+	color: #505050;
+	color: #268bd2;
+	font-weight: bold;
+	// text-transform: lowercase;
+	text-transform: uppercase;
+	.saf {
+		// color: red;
+	}
+	.raz {
+		// color: orange;
+		// opacity: 0.75;
+	}
+	.ik {
+		// color: yellow;
+		// opacity: 0.5;
+	}
+
+	.saf, .raz {
+		border-top: 2px solid #EAEAEA;
+		padding-top: 5px;
+	}
+
+	.raz, .ik {
+		border-bottom: 2px solid #EAEAEA;
+		padding-bottom: 5px;
+	}
+
+	.first.raz {
+		display: none;
+	}
+}
+
+a.brand-link:hover .safrazik {
+	color: #268bd2;
+}
