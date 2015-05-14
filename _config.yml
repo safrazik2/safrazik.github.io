@@ -4,6 +4,7 @@ tagline: ""
 description: ""
 baseurl: ""
 url: "http://safrazik.github.io"
+disqus_shortname: safrazik
 
 # Build settings
 markdown: kramdown

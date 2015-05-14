@@ -17,6 +17,20 @@
 	// margin-right: auto;
 }
 
+.post {
+	margin-bottom: 2rem;
+}
+
+.related {
+	padding-top: 1rem;
+	margin-top: 2rem;
+	display: none;
+}
+
+#disqus_thread {
+	margin-bottom: 2rem;
+}
+
 /* hide the nprogress spinner (in case the javascript setting doesn't work) */
 #nprogress .spinner {
 	display: none !important;
