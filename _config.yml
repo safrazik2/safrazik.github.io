@@ -8,7 +8,7 @@ disqus_enabled: true
 disqus_shortname: safrazik
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 sass:
     sass_dir: _scss
